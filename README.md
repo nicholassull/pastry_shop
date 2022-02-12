@@ -25,7 +25,9 @@ _The console application simulates an online store for Pierre's Bakery. It begin
 ### Test Setup
 * _Navigate to PastryShop.Solution/PastryShop.Tests in your terminal._
 * _Run the commands below_
+
 > dotnet restore
+
 > dotnet test
 
 
