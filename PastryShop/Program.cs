@@ -31,12 +31,31 @@ namespace PastryShop
         int breadAmount = int.Parse(Console.ReadLine());
         Console.WriteLine("How many Pastries would you like?");
         int pastryAmount = int.Parse(Console.ReadLine());
+        int totalPrice = calculatePrice(breadAmount, pastryAmount);
+        Console.WriteLine("=====================");
+        Console.WriteLine("For your order of " + breadAmount + " loaves of bread and " + pastryAmount + " pastries...");
+        Console.WriteLine("The total comes to $" + totalPrice + " dollars.");
+        nextOrder();
     }
     static int calculatePrice(int breadAmount, int pastryAmount)
     {
       int breadTotal = Bread.FindTotal(breadAmount);
       int pastryTotal = Pastry.FindTotal(pastryAmount);
       return breadTotal + pastryTotal;
+    }
+    static void nextOrder()
+    {
+      Console.WriteLine("=====================");
+      Console.WriteLine("Would you like to make another order? (Y = 'yes', N = 'no')");
+      string userAnswer = Console.ReadLine().ToLower();
+      if (userAnswer == "y")
+      {
+        purchasingInterface();
+      }
+      else
+      {
+        Console.WriteLine("Thank you for supporting Pierre's Bakery! We hope to see you again soon!");
+      }
     }
   }
 }
