@@ -11,7 +11,7 @@
 
 ## Description
 
-_The console application simulates an online store for Pierre's Bakery. It begins by welcome the user and outlines the prices and current sales. The user can input the number of pastries and bread loaves they'd like to purchase, and the application will tell the user how much order will cost. This project is intended to showcase my understanding of test driven development in C#._
+_The console application simulates an online store for Pierre's Bakery. It begins by welcoming the user and outlines the prices and current sales. The user can input the number of pastries and bread loaves they'd like to purchase, and the application will tell the user how much the order will cost. This project is intended to showcase my understanding of test driven development in C#._
 
 ## Setup Instructions
 
