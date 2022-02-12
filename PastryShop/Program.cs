@@ -22,6 +22,11 @@ namespace PastryShop
       Console.WriteLine("4 Pastry: $7");
       Console.WriteLine("5 Pastry: $9");
       Console.WriteLine("6 Pastry: $10");
+      Console.WriteLine("=====================");
+      Console.WriteLine("How many loaves of bread would you like?");
+      int breadAmount = int.Parse(Console.ReadLine());
+      Console.WriteLine("How many Pastries would you like?");
+      int pastriesAmount = int.Parse(Console.ReadLine());
     }
 
   }
