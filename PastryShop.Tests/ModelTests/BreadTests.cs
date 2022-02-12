@@ -12,5 +12,12 @@ namespace PastryShop.TestTools
       Bread newBread = new Bread();
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
+    [TestMethod]
+    public void FindTotal_ReturnsTotal_Int()
+    {
+      int amount = 3;
+      int result = Bread.FindTotal(amount);
+      Assert.AreEqual(10, result);
+    }
   }
 }
