@@ -17,8 +17,16 @@ _The console application simulates an online store for Pierre's Bakery. It begin
 
 * _Open your terminal and navigate to the folder you'd like to download the files into._
 * _Run the command below_
-> git clone https://github.com/nicholassull/portfolio-landing
-* __
+> git clone https://github.com/nicholassull/pastry_shop.git
+* _Navigate to PastryShop.Solution/PastryShop in your terminal._
+* _Run the command below_
+> dotnet run
+
+### Test Setup
+* _Navigate to PastryShop.Solution/PastryShop.Tests in your terminal._
+* _Run the commands below_
+> dotnet restore
+> dotnet test
 
 
 ## Known Bugs
@@ -27,7 +35,7 @@ _The console application simulates an online store for Pierre's Bakery. It begin
 
 ## License
 
-Copyright (c) _10/27/2021_ _by Nick Sullivan_
+Copyright (c) _02/12/2022_ _by Nick Sullivan_
 
 
 _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
