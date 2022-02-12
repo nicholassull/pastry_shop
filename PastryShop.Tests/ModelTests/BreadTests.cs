@@ -13,11 +13,18 @@ namespace PastryShop.TestTools
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
     [TestMethod]
-    public void FindTotal_ReturnsTotal_Int()
+    public void FindTotal_ReturnsTotal_Int01()
     {
       int amount = 3;
       int result = Bread.FindTotal(amount);
       Assert.AreEqual(10, result);
+    }
+    [TestMethod]
+    public void FindTotal_ReturnsTotal_Int02()
+    {
+      int amount = 4;
+      int result = Bread.FindTotal(amount);
+      Assert.AreEqual(15, result);
     }
   }
 }
